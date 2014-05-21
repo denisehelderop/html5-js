@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+	<title>aap</title>
+
+    <script src="External.js"></script>
+</head>
+
+<body>
+
+    <input type="button" value="Click" onclick="ExternalSayHello()" />
+
+<script>
+
+var text = "my name is Dennis, I've been named like this \
+since birth, Denise is a lovely name";
+var myName ="Denise";
+var hits = [];
+
+for(var i = 0; i <text.length; i++)
+    {
+    if (text[i] === myName[0])
+        {
+            for(var j = i; j <(myName.length + i); j++)
+            {
+               hits.push(text[j]); 
+            }
+        }
+    }
+if (hits.length === 0)
+    {
+        console.log("You're name wasn't found");
+    }
+
+else 
+    {
+        console.log(hits);
+    }
+
+</script>
+
+</body>
+
+</html>
