@@ -7,13 +7,19 @@
 
 	<script>
 		
-		function test(id, text) {
+		function test(id, text,) {
 			document.getElementById(id).innerHTML = text;
 		}
 		
 		function test2(id, id2) {
 			document.getElementById(id).innerHTML = document.getElementById(id2).value;
 		}
+
+		  function changeDivTextColor()
+        {
+            document.getElementById(id).style.color = 'red';
+        }
+
 
 	</script>
 </head>
@@ -34,17 +40,17 @@
 	
 
 	<p>
-		<button onclick="test('een', 'bladiebla');">een</button>
+		<button onclick="test('een', 'kont'); "changeDivTextColor";">een</button>
 		<button onclick="test('twee', 'wiew!');">twee</button>
 		<button onclick="test('drie', 'appel');">drie</button>
 		<button onclick="test('vier', 'oink');">vier</button>
 	</p>
 
 
-	<p>
+	<!--<p>
 		<input id="input1" type="text" />
 		<button onclick="test2('een', 'input1');">11n</button>
-	</p>
+	</p>-->
 
 </body>
 
