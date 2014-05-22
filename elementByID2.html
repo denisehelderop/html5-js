@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title></title>
+
+	<script>
+
+		function test(id, text, color) {
+			document.getElementById(id).innerHTML = text;
+			document.getElementById(id).style.color = color; 
+		}
+
+		function changeDivTextColorYellow(id) {
+            document.getElementById(id).style.color = 'yellow';
+        }
+<!-- Hoe kun je allerlei kleurtjes doen, dus color en dan achter het is teken ook color....-->
+	</script>
+</head>
+
+<body>
+
+	<p id="een">
+		dropje
+	</p>
+
+	<p id="twee">
+		de aap eet een <b id="drie">banaan</b>!!!
+	</p>
+
+	<p id="vier">
+		aap
+	</p>
+
+		<!-- Ik wil die kleurtjes die ik erachter heb gezet laten werken hoe doe ik dat-->
+	<p>
+		<button onclick="test('een', 'bladiebla', 'red');">een</button>
+		<button onclick="test('twee', 'wiew!', 'green');">twee</button>
+		<button onclick="test('drie', 'appel', 'orange');">drie</button>
+		<button onclick="test('vier', 'oink', 'blue');">vier</button>
+		<button onclick="changeDivTextColorYellow('drie');">kleur banaan</button>
+	</p>
+
+</body>
+
+</html>
