@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detect a Browser</title>
+		<script src="http://code.jquery.com/jquery-1.8.0.js"></script>
+	</head>
+	<body>
+		<h1>Browser Information</h1>
+		<p id="name"></p>
+		<script language="JavaScript">
+			var browser =
+				$.uaMatch(navigator.userAgent).browser;
+			$('p[id="name"]').html(
+				"Browser Name: <span>" + browser + "</span>");
+		</script>
+		<p id="version"></p>
+		<script language="JavaScript">
+			$('p[id="version"]').html(
+				"Version Number: <span>" + $.browser.version +
+				"</span>");
+		</script>
+	</body>
+</html>
