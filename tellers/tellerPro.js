@@ -6,8 +6,8 @@
 var tellers = [0, 0];
 function tel(elementId, tellerNummer){
 	/*
-	 * teller[tellerNummer] wordt opgehoogd en daarna wordt de waarde
-	 * van teller[tellerNummer] in element met is elementId gezet.
+	 * tellers[tellerNummer] wordt opgehoogd en daarna wordt de waarde
+	 * van tellers[tellerNummer] in element met is elementId gezet.
 	 */
 
 }
