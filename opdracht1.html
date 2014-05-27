@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opdracht 1</title>
+	<script type="text/javascript">
+var tellers = [-1, 0, 0];
+var tekstjes = [ "Elmer", "is", "verliefd", "op", "Denise"];
+
+function tel(id, tellersTelnummer, optellen)
+{
+	tellers[tellersTelnummer] = tellers[tellersTelnummer] + optellen;
+
+	tellers[tellersTelnummer] = tellers[tellersTelnummer] % tekstjes.length;
+
+	document.getElementById(id).innerHTML = tekstjes[tellers[tellersTelnummer]];
+}
+
+
+	</script>
+<body>
+
+<div>
+	<span id="een">-</span>
+	<span id="twee">-</span>
+	<span id="drie">-</span>
+</div>
+
+<div>
+<button onclick="tel('een', 0, 1)">teller een</button>
+<button onclick="tel('twee', 1, 4)">teller twee</button>
+<button onclick="tel('drie', 2, 6)">teller drie</button>
+</div>
+
+
+</body>
+</head>
+</html>
